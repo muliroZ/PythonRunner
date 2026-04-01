@@ -5,12 +5,11 @@ class Ground:
         self.x1 = 0
         self.x2 = width
         self.y = 300
-        self.speed = 6
         self.width = width
 
-    def update(self):
-        self.x1 -= self.speed
-        self.x2 -= self.speed
+    def update(self, speed):
+        self.x1 -= speed
+        self.x2 -= speed
 
         if self.x1 <= -self.width:
             self.x1 = self.width
