@@ -15,9 +15,9 @@ class Spawner:
     
     def get_obstacle_type(self, speed):
         if speed < 8:
-            return random.choice(["small", "small", "tall"])
+            return random.choice(["small", "small", "tall", "flying"])
         else:
-            return random.choice(["small", "tall", "tall"])
+            return random.choice(["small", "tall", "tall", "flying", "flying"])
     
     def spawn_obstacle(self, speed):
         obstacle_type = self.get_obstacle_type(speed)

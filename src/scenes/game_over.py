@@ -9,6 +9,7 @@ class GameOverScene(Scene):
 
         if score > self.game.high_score:
             self.game.high_score = score
+            self.game.save_high_score()
 
     def handle_events(self, events):
         for event in events:
