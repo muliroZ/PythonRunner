@@ -1,3 +1,6 @@
+# Arquivo de Pontuação
+score.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
