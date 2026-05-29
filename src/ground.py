@@ -4,7 +4,7 @@ class Ground:
     def __init__(self, width):
         self.x1 = 0
         self.x2 = width
-        self.y = 300
+        self.y = 400
         self.width = width
 
     def update(self, speed):
@@ -18,5 +18,5 @@ class Ground:
             self.x2 = self.width
 
     def draw(self, screen):
-        pygame.draw.rect(screen, (200, 200, 200), (self.x1, self.y, self.width, 10))
-        pygame.draw.rect(screen, (200, 200, 200), (self.x2, self.y, self.width, 10))
+        pygame.draw.rect(screen, (43, 9, 100), (self.x1, self.y, self.width, 10))
+        pygame.draw.rect(screen, (43, 9, 100), (self.x2, self.y, self.width, 10))
