@@ -3,6 +3,7 @@ import math
 from src.scenes.scene import Scene
 from src.scenes.game_scene import GameScene
 from src.background import Background
+from settings import FONT
 
 class MenuScene(Scene):
     def __init__(self, game):
@@ -11,8 +12,8 @@ class MenuScene(Scene):
         self.music = pygame.mixer.Sound("assets/sounds/menumusic.mp3")
         self.music.play(-1)
 
-        self.font_title = pygame.font.Font(None, 80)
-        self.font_start = pygame.font.Font(None, 48)
+        self.font_title = pygame.font.Font(FONT, 80)
+        self.font_start = pygame.font.Font(FONT, 48)
 
         self.background = Background(800, 400)
         self.timer = 0

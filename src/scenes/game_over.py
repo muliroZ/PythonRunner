@@ -1,6 +1,7 @@
 import pygame
 from src.scenes.scene import Scene
 from src.background import Background
+from settings import FONT
 
 class GameOverScene(Scene):
     def __init__(self, game, score):
@@ -10,9 +11,9 @@ class GameOverScene(Scene):
         self.music.play(-1)
 
         self.score = score
-        self.font_title = pygame.font.Font(None, 80)
-        self.font_text = pygame.font.Font(None, 48)
-        self.font_small = pygame.font.Font(None, 36)
+        self.font_title = pygame.font.Font(FONT, 80)
+        self.font_text = pygame.font.Font(FONT, 48)
+        self.font_small = pygame.font.Font(FONT, 36)
 
         self.background = Background(800, 400)
 

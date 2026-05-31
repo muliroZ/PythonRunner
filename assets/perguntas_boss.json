@@ -1,0 +1,122 @@
+[
+  {
+    "q": "Se um código tem um comando SE (IF) dentro de outro SE (IF), o que precisa acontecer para o bloco interno ser executado?",
+    "options": ["A) Apenas a primeira condição ser verdadeira", "B) Ambas as condições serem verdadeiras", "C) Nenhuma condição ser verdadeira"],
+    "answer": "b"
+  },
+  {
+    "q": "Para o jogo fazer a tela piscar toda vez que a pontuação atinge exatamente os múltiplos de 100 (100, 200, 300...), usamos qual operador matemático?",
+    "options": ["A) Resto da divisão (%)", "B) Multiplicação (*)", "C) Raiz quadrada"],
+    "answer": "a"
+  },
+  {
+    "q": "O escudo quebra se o jogador 'for atingido' E 'NÃO estiver invisível'. Se ele for atingido enquanto está invisível, o que o computador entende?",
+    "options": ["A) Verdadeiro e Verdadeiro = Quebra", "B) Falso e Falso = Quebra", "C) Verdadeiro e Falso = Não quebra"],
+    "answer": "c"
+  },
+  {
+    "q": "O jogo carrega apenas os obstáculos mais próximos na tela, apagando os que já passaram. O que isso melhora no computador do jogador?",
+    "options": ["A) O desempenho do processador e o uso de memória", "B) A qualidade das músicas", "C) O brilho do monitor"],
+    "answer": "a"
+  },
+  {
+    "q": "Ao aplicar gravidade, o código soma um pequeno valor à velocidade de queda a cada frame. O que isso gera na movimentação do personagem?",
+    "options": ["A) Uma queda em velocidade constante", "B) Uma queda acelerada (cada vez mais rápida)", "C) Ele flutua temporariamente"],
+    "answer": "b"
+  },
+  {
+    "q": "Uma variável chamada 'estado_do_jogo' guarda textos como 'menu', 'jogando' ou 'game_over'. Qual a utilidade prática disso?",
+    "options": ["A) Decidir qual parte do código deve rodar e qual tela exibir", "B) Calcular a pontuação bônus", "C) Aumentar a dificuldade dos inimigos"],
+    "answer": "a"
+  },
+  {
+    "q": "Na função `gerar_inimigo(velocidade, dano)`, os valores dentro dos parênteses determinam as características daquele inimigo. Como eles são chamados?",
+    "options": ["A) Loops infinitos", "B) Constantes universais", "C) Parâmetros (ou Argumentos)"],
+    "answer": "c"
+  },
+  {
+    "q": "O placar guarda o nome e a pontuação dos melhores jogadores organizados assim: [['João', 100], ['Ana', 200]]. Como chamamos essa estrutura?",
+    "options": ["A) Uma variável booleana", "B) Uma Matriz (ou Lista de Listas)", "C) Uma String longa"],
+    "answer": "b"
+  },
+  {
+    "q": "Para detectar batidas, o código imagina um retângulo invisível (hitbox) ao redor do jogador e do obstáculo. Se diminuirmos esse retângulo do jogador, o jogo fica...",
+    "options": ["A) Mais pesado", "B) Mais difícil", "C) Mais fácil (menos chances de bater injustamente)"],
+    "answer": "c"
+  },
+  {
+    "q": "A pontuação cresce decimalmente como 1.5, 1.6, 1.7... mas na tela só aparecem números inteiros (1, 2). Qual técnica o código faz antes de desenhar o placar?",
+    "options": ["A) Converte ou arredonda o Decimal (Float) para Inteiro (Int)", "B) Converte o número para Booleano", "C) Substitui os números por letras"],
+    "answer": "a"
+  },
+  {
+    "q": "Como o PythonRunner consegue criar a ilusão de que o chão do deserto é infinito enquanto o personagem corre sem parar?",
+    "options": ["A) O chão tem milhões de pixels desenhados de uma vez", "B) Duas imagens de chão se movem e, ao sair da tela, voltam para o final da fila", "C) O jogo cria um novo chão do zero a cada segundo"],
+    "answer": "b"
+  },
+  {
+    "q": "O que acontece imediatamente quando a função `verificar_colisao()` chega no comando 'Return True' (Retornar Verdadeiro)?",
+    "options": ["A) Ela avisa que houve batida e encerra a função entregando esse resultado", "B) Ela apaga o obstáculo da tela", "C) Ela entra em um loop infinito"],
+    "answer": "a"
+  },
+  {
+    "q": "Se o jogador apertar 'pular' repetidamente enquanto está no meio do ar, por que o personagem não sai voando infinitamente para cima?",
+    "options": ["A) Porque a gravidade muda para zero", "B) Porque o código exige que a variável 'tocando_no_chao' seja Verdadeira antes de pular de novo", "C) Porque o teclado não lê teclas tão rápido"],
+    "answer": "b"
+  },
+  {
+    "q": "O jogo sorteia vida extra (10% de chance) ou moedas (90%). Se o código gera um número aleatório de 1 a 100, quando a vida aparece?",
+    "options": ["A) Apenas no número 100", "B) Quando o número sorteado cai entre 1 e 10, por exemplo", "C) Quando sorteia números ímpares"],
+    "answer": "b"
+  },
+  {
+    "q": "Quando você fecha o jogo, seu recorde de pontos não some para o dia seguinte. Como o código consegue essa memória permanente?",
+    "options": ["A) Ele usa a memória RAM do sistema", "B) O código nunca desliga de verdade", "C) Ele salva a informação gravando dados em um arquivo no computador (ex: arquivo JSON)"],
+    "answer": "c"
+  },
+  {
+    "q": "Para limpar todos os obstáculos da tela instantaneamente ao dar 'Game Over', qual é a maneira mais eficiente que o código utiliza?",
+    "options": ["A) Esvaziar a lista de obstáculos (criando uma lista nova vazia)", "B) Transformar a lista em texto", "C) Esconder as imagens atrás do cenário"],
+    "answer": "a"
+  },
+  {
+    "q": "Você notou um bug: a pontuação de recorde no menu nunca atualiza. O que provavelmente está faltando no código?",
+    "options": ["A) O jogo está rodando rápido demais", "B) A condição lógica 'SE pontuacao_atual > recorde' nunca está sendo chamada ou salva", "C) O jogador ainda não morreu no jogo"],
+    "answer": "b"
+  },
+  {
+    "q": "No desenvolvimento, cria-se um 'molde' afirmando que todo Obstáculo tem velocidade, posição X, Y e uma imagem. Como chamamos esse molde na programação mais avançada?",
+    "options": ["A) Uma Classe (Programação Orientada a Objetos)", "B) Um arquivo de áudio criptografado", "C) Uma Condicional de repetição"],
+    "answer": "a"
+  },
+  {
+    "q": "O jogador tentou colocar o nome 'Super_Corredor_Ninja_MAX', mas o jogo cortou para 'Super_Corre'. Qual técnica de lógica textual foi aplicada?",
+    "options": ["A) Concatenação", "B) Multiplicação de String", "C) Fatiamento (Slice / Substring)"],
+    "answer": "c"
+  },
+  {
+    "q": "Se o Laço Principal do jogo (While Loop) tiver que fazer muitos cálculos pesados e demorar para processar as imagens, o que o jogador sentirá?",
+    "options": ["A) O FPS (taxa de quadros) cai e o jogo parece estar 'travando' (lag)", "B) O jogo pula automaticamente para a última fase", "C) O jogo fica extremamente acelerado"],
+    "answer": "a"
+  },
+  {
+    "q": "O jogador ganha um Escudo SE 'tiver mais de 1000 pontos' OU 'pegar uma estrela mágica'. Se ele tiver apenas 50 pontos, mas pegar a estrela, o que ocorre?",
+    "options": ["A) Ele ganha o Escudo, pois na regra do 'OU' basta uma afirmação ser verdadeira", "B) Ele não ganha, pois precisa dos pontos", "C) O jogo dá erro lógico"],
+    "answer": "a"
+  },
+  {
+    "q": "Em quase toda linguagem de programação, o primeiro item de uma lista ocupa a posição (índice) 0. Se a lista tem 5 itens, qual a posição do ÚLTIMO item?",
+    "options": ["A) Posição 5", "B) Posição 0", "C) Posição 4"],
+    "answer": "c"
+  },
+  {
+    "q": "Se o programador cometer o erro de mandar 'desenhar o jogador' ANTES de 'calcular as leis da física daquele momento', o que acontecerá na tela?",
+    "options": ["A) O jogador sumirá do jogo", "B) O jogador será desenhado na tela sempre atrasado, parecendo estar um passo no passado", "C) A imagem ficará de cabeça para baixo"],
+    "answer": "b"
+  },
+  {
+    "q": "Para evitar checar mil colisões por segundo e travar o jogo, uma técnica esperta em programação é...",
+    "options": ["A) Só checar a colisão entre o jogador e o primeiro obstáculo da fila que estiver próximo a ele", "B) Desligar o cálculo de matemática das imagens", "C) Apagar o sistema de vidas do jogador"],
+    "answer": "a"
+  }
+]
