@@ -18,23 +18,14 @@ set "PATH=%USERPROFILE%\.cargo\bin;%PATH%"
 
 echo.
 echo [3/4] Construindo o ambiente e baixando dependencias do projeto...
+uv cache clean
+uv python pin 3.12
 uv sync
-pyinstaller main.py --onefile --windowed
 
 echo [4/4] Criando o atalho de inicializacao...
 echo @echo off > jogar.bat
 echo title PythonRunner >> jogar.bat
 echo uv run main.py >> jogar.bat
-
-set "PROJECT_DIR=%~dp0"
-set "TARGET=%PROJECT_DIR%dist\main.exe"
-set "SHORTCUT=%USERPROFILE%\Desktop\PythonRunner.lnk"
-
-powershell -Command ^
-"$s=(New-Object -COM WScript.Shell).CreateShortcut('%SHORTCUT%');" ^
-"$s.TargetPath='%TARGET%';" ^
-"$s.WorkingDirectory='%PROJECT_DIR%dist';" ^
-"$s.Save()"
 
 echo.
 echo ==========================================
