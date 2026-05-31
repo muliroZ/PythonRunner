@@ -18,6 +18,8 @@ set "PATH=%USERPROFILE%\.cargo\bin;%PATH%"
 
 echo.
 echo [3/4] Construindo o ambiente e baixando dependencias do projeto...
+uv cache clean
+uv python pin 3.12
 uv sync
 
 echo [4/4] Criando o atalho de inicializacao...
