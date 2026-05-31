@@ -7,19 +7,25 @@ class Spawner:
         self.obstacle_group = obstacle_group
         self.powerup_group = powerup_group
         self.timer = 0
-        self.next_spawn = self.get_next_spawn(6)
         self.last_spawn_type = None
         self.powerup_timer = 300
+        self.last_spawn_was_cluster = False
+
+        self.next_spawn = self.get_next_spawn(6)
 
     def get_next_spawn(self, speed):
         base = random.randint(60, 120)
-        return max(30, base - int(speed * 5))
+        breath = 40 if self.last_spawn_was_cluster else 0
+
+        return max(35, base - int(speed * 5)) + breath
     
     def get_obstacle_type(self, speed):
         if speed < 8:
             return random.choice(["small", "small", "tall", "flying"])
-        else:
+        elif speed < 12:
             return random.choice(["small", "tall", "tall", "flying", "flying"])
+        else:
+            return random.choice(["tall", "flying", "flying"])
     
     def spawn_obstacle(self, speed):
         obstacle_type = self.get_obstacle_type(speed)
@@ -27,8 +33,18 @@ class Spawner:
         if obstacle_type == self.last_spawn_type:
             obstacle_type = self.get_obstacle_type(speed)
 
+        is_cluster = speed >= 9 and random.random() < 0.3
+        self.last_spawn_was_cluster = is_cluster
+
         obstacle = Obstacle(800, obstacle_type)
         self.obstacle_group.add(obstacle)
+
+        if is_cluster:
+            secondary_type = "small" if obstacle_type == "flying" else "flying"
+            extra_distance = random.randint(250, 400)
+
+            obstacle2 = Obstacle(800 + extra_distance, secondary_type)
+            self.obstacle_group.add(obstacle2)
 
         self.last_spawn_type = obstacle_type
 
