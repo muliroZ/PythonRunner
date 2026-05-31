@@ -25,6 +25,8 @@ class Game:
         try:
             self.sfx['jump'] = pygame.mixer.Sound("assets/sounds/jump.wav")
             self.sfx['jump'].set_volume(0.3)
+            self.sfx['dash'] = pygame.mixer.Sound("assets/sounds/dash.wav")
+            self.sfx['dash'].set_volume(0.3)
 
             self.sfx['hit'] = pygame.mixer.Sound("assets/sounds/hit.wav")
             self.sfx['reward'] = pygame.mixer.Sound("assets/sounds/reward.wav")
