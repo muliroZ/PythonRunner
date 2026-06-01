@@ -182,7 +182,7 @@ class GameScene(Scene):
         
         elif self.boss_fight_active:
             self.lasers.update(self.speed)
-            has_shooted = self.boss.update(self.lasers, self.snake.rect)
+            has_shooted = self.boss.update(self.lasers, self.snake.hitbox)
 
             if has_shooted and "jump" in getattr(self.game, "sfx", {}):
                 self.game.sfx["jump"].play()
@@ -192,7 +192,7 @@ class GameScene(Scene):
                 self.game.change_scene(QuestionScene(self.game, self, is_boss=True))
                 return
             
-            if pygame.sprite.spritecollide(self.snake, self.lasers, False):
+            if pygame.sprite.spritecollide(self.snake, self.lasers, False, collided=lambda p, obj: p.hitbox.colliderect(obj.rect)):
                 if self.has_shield:
                     self.has_shield = False
                     if "explosion" in getattr(self.game, "sfx", {}):
@@ -219,7 +219,7 @@ class GameScene(Scene):
                 self.game.change_scene(QuestionScene(self.game, self))
                 return
 
-            hit_powerups = pygame.sprite.spritecollide(self.snake, self.powerups, True)
+            hit_powerups = pygame.sprite.spritecollide(self.snake, self.powerups, True, collided=lambda p, obj: p.hitbox.colliderect(obj.rect))
             for hit in hit_powerups:
                 if hit.type == "shield":
                     self.has_shield = True
@@ -230,7 +230,7 @@ class GameScene(Scene):
                 if "reward" in getattr(self.game, "sfx", {}):
                     self.game.sfx["reward"].play()
 
-            hit_obstacles = pygame.sprite.spritecollide(self.snake, self.obstacles, False)
+            hit_obstacles = pygame.sprite.spritecollide(self.snake, self.obstacles, False, collided=lambda p, obj: p.hitbox.colliderect(obj.rect))
             if hit_obstacles:
                 if self.has_shield:
                     self.has_shield = False
@@ -263,7 +263,7 @@ class GameScene(Scene):
         self.powerups.draw(render_surface)
 
         if self.has_shield:
-            pygame.draw.circle(render_surface, (139, 233, 253), self.snake.rect.center, 25, 4)
+            pygame.draw.circle(render_surface, (139, 233, 253), self.snake.hitbox.center, 25, 4)
 
         self.snake_group.draw(render_surface)
         self.obstacles.draw(render_surface)

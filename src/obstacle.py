@@ -11,10 +11,12 @@ class Obstacle(pygame.sprite.Sprite):
             self.image = pygame.Surface((20, 30))
             self.image.fill((255, 0, 0))
             self.rect = self.image.get_rect(midbottom=(x, 400))
+
         elif obstacle_type == "tall":
-            self.image = pygame.Surface((20, 60))
-            self.image.fill((255, 0, 0))
+            self.image = pygame.image.load("assets/sprites/CactoTall.png").convert_alpha()
+            self.image = pygame.transform.scale(self.image, (int(self.image.get_width() * 1.3), int(self.image.get_height() * 1.3)))
             self.rect = self.image.get_rect(midbottom=(x, 400))
+
         elif obstacle_type == "flying":
             self.image = pygame.Surface((30, 20))
             self.image.fill((0, 200, 255))
