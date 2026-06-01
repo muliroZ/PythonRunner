@@ -8,9 +8,6 @@ from settings import FONT
 class MenuScene(Scene):
     def __init__(self, game):
         super().__init__(game)
-        
-        self.music = pygame.mixer.Sound("assets/sounds/menumusic.mp3")
-        self.music.play(-1)
 
         self.font_title = pygame.font.Font(FONT, 80)
         self.font_start = pygame.font.Font(FONT, 48)
@@ -22,7 +19,6 @@ class MenuScene(Scene):
         for event in events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    self.music.stop()
                     self.game.change_scene(GameScene(self.game))
 
     def update(self):

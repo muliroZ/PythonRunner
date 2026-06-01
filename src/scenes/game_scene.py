@@ -16,8 +16,6 @@ class GameScene(Scene):
     def __init__(self, game):
         super().__init__(game)
 
-        pygame.mixer.music.play(-1)
-
         self.snake = Snake()
         self.snake_group = pygame.sprite.GroupSingle(self.snake)
 
@@ -111,7 +109,6 @@ class GameScene(Scene):
         if self.lives <= 0:
             if "explosion" in getattr(self.game, "sfx", {}):
                 self.game.sfx["explosion"].play()
-            pygame.mixer.music.stop()
 
             self.game.change_scene(GameOverScene(self.game, self.score))
         else:
@@ -139,7 +136,6 @@ class GameScene(Scene):
         if self.is_dead:
             self.shake_timer -= 1
             if self.shake_timer <= 0:
-                pygame.mixer.music.stop()
                 self.game.change_scene(GameOverScene(self.game, self.score))
             return
 

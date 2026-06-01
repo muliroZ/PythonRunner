@@ -7,9 +7,6 @@ class GameOverScene(Scene):
     def __init__(self, game, score):
         super().__init__(game)
 
-        self.music = pygame.mixer.Sound("assets/sounds/gameover.mp3")
-        self.music.play(-1)
-
         self.score = score
         self.font_title = pygame.font.Font(FONT, 80)
         self.font_text = pygame.font.Font(FONT, 48)
@@ -27,7 +24,6 @@ class GameOverScene(Scene):
         for event in events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    self.music.stop()
                     from src.scenes.game_scene import GameScene
 
                     self.game.change_scene(GameScene(self.game))
