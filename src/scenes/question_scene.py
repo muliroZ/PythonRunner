@@ -26,12 +26,12 @@ class QuestionScene(Scene):
         self.state = "WAITING" 
         self.feedback_timer = 60 
         self.selected_key = None 
-        self.option_keys = [pygame.K_a, pygame.K_b, pygame.K_c]
+        self.option_keys = [pygame.K_1, pygame.K_2, pygame.K_3]
         
         self.key_map = {
-            "a": pygame.K_a,
-            "b": pygame.K_b,
-            "c": pygame.K_c
+            "a": pygame.K_1,
+            "b": pygame.K_2,
+            "c": pygame.K_3
         }
         
         self.questions = self.load_questions()
@@ -77,8 +77,8 @@ class QuestionScene(Scene):
         fallback_questions = [
             {
                 "q": "Erro ao carregar JSON. A resposta é A?",
-                "options": ["A) Sim", "B) Não", "C) Talvez"],
-                "answer": pygame.K_a
+                "options": ["1) Sim", "2) Não", "3) Talvez"],
+                "answer": pygame.K_1
             }
         ]
 
@@ -89,7 +89,7 @@ class QuestionScene(Scene):
 
                     for q in data:
                         letter = q.get("answer", "a").lower()
-                        q["answer"] = self.key_map.get(letter, pygame.K_a)
+                        q["answer"] = self.key_map.get(letter, pygame.K_1)
 
                     return data
             except json.JSONDecodeError:
