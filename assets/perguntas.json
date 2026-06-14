@@ -1,252 +1,122 @@
 [
   {
-    "q": "Para guardar a pontuação do jogador no PythonRunner, qual conceito de programação usamos?",
-    "options": ["A) Variável", "B) Laço de repetição", "C) Condicional"],
-    "answer": "a"
+    "q": "Para guardar a pontuação atual do jogador no PythonRunner, usamos uma...",
+    "options": ["1) Variável", "2) Janela do Windows", "3) Imagem de fundo"],
+    "answer": "1"
   },
   {
-    "q": "A velocidade do jogador pode mudar com o tempo. Por isso, ela deve ser armazenada em uma...",
-    "options": ["A) Lista", "B) Variável", "C) Constante"],
-    "answer": "b"
+    "q": "A pontuação inicial do jogo começa em 0. Esse número pertence a qual tipo de dado?",
+    "options": ["1) Texto (String)", "2) Inteiro (Int)", "3) Verdadeiro/Falso (Booleano)"],
+    "answer": "2"
   },
   {
-    "q": "Se a quantidade de vidas iniciais do jogador nunca muda (sempre 3), ela atua como uma...",
-    "options": ["A) Constante", "B) Variável", "C) Função"],
-    "answer": "a"
+    "q": "O nome que o jogador digita no menu (ex: 'Murilo') é guardado como qual tipo de dado?",
+    "options": ["1) Número inteiro", "2) Texto (String)", "3) Um operador matemático"],
+    "answer": "2"
   },
   {
-    "q": "O que acontece com a variável 'pontos' quando o jogador desvia de um obstáculo e ganha bônus?",
-    "options": ["A) É apagada", "B) Muda de valor", "C) Vira texto"],
-    "answer": "b"
+    "q": "Qual comando usamos para fazer o personagem pular SE a barra de espaço for apertada?",
+    "options": ["1) IF (Se)", "2) WHILE (Enquanto)", "3) FOR (Para)"],
+    "answer": "1"
   },
   {
-    "q": "Qual é a utilidade principal de uma variável chamada 'nome_jogador'?",
-    "options": ["A) Guardar texto", "B) Tocar som", "C) Fazer laços"],
-    "answer": "a"
+    "q": "O que o comando ELSE (Senão) faz quando colocado junto com um IF?",
+    "options": ["1) Executa uma ação caso a condição do IF seja falsa", "2) Reinicia o computador do jogador", "3) Fecha o jogo imediatamente"],
+    "answer": "1"
   },
   {
-    "q": "A pontuação '150' no jogo é representada por qual tipo de dado na programação?",
-    "options": ["A) Texto (String)", "B) Inteiro (Int)", "C) Booleano"],
-    "answer": "b"
+    "q": "Para fazer as nuvens do cenário se moverem continuamente na tela frame por frame, usamos um...",
+    "options": ["1) Laço de repetição (Loop)", "2) Texto fixo", "3) Comando de Game Over"],
+    "answer": "1"
   },
   {
-    "q": "O nome do jogador inserido no menu ('João') é armazenado como qual tipo de dado?",
-    "options": ["A) Número", "B) Booleano", "C) Texto (String)"],
-    "answer": "c"
+    "q": "Se uma variável chamada 'jogo_rodando' guarda o valor True (Verdadeiro), o tipo dela é...",
+    "options": ["1) Booleano", "2) Número com vírgula", "3) Lista de nomes"],
+    "answer": "1"
   },
   {
-    "q": "Para saber se o jogador está vivo ou morto, usamos um tipo de dado que só tem duas opções chamado...",
-    "options": ["A) Booleano (Verd/Falso)", "B) Texto", "C) Inteiro"],
-    "answer": "a"
+    "q": "Para somar +10 pontos ao placar quando o jogador pega um item, usamos qual operador?",
+    "options": ["1) Menos (-)", "2) Mais (+)", "3) Vezes (*)"],
+    "answer": "2"
   },
   {
-    "q": "A força da gravidade do jogo (ex: 9.8) usa números com casas decimais. Qual é o tipo de dado?",
-    "options": ["A) Texto", "B) Decimal (Float)", "C) Booleano"],
-    "answer": "b"
+    "q": "Quando o jogador perde todas as vidas, o código interrompe a corrida e mostra a tela de...",
+    "options": ["1) Game Over", "2) Escolha de personagens", "3) Configurações de som"],
+    "answer": "1"
   },
   {
-    "q": "Juntar a palavra 'Pontos: ' com o número 10 para exibir na tela é chamado de...",
-    "options": ["A) Divisão", "B) Concatenação", "C) Subtração"],
-    "answer": "b"
+    "q": "Para guardar de uma só vez o nome de todos os obstáculos do jogo (como pedra, cacto e cobra), usamos uma...",
+    "options": ["1) Variável de número único", "2) Lista (Array)", "3) Operação de divisão"],
+    "answer": "2"
   },
   {
-    "q": "Se o jogador ganha 10 pontos a cada segundo de sobrevivência, qual operador matemático usamos na pontuação?",
-    "options": ["A) Adição (+)", "B) Subtração (-)", "C) Divisão (/)"],
-    "answer": "a"
+    "q": "O que acontece com o PythonRunner se criarmos um laço de repetição que nunca para (loop infinito)?",
+    "options": ["1) O jogo trava ou congela", "2) O jogador ganha pontos automáticos", "3) A tela muda de cor sozinha"],
+    "answer": "1"
   },
   {
-    "q": "O jogador perde 5 pontos ao esbarrar num obstáculo pequeno. Qual operador matemático é usado?",
-    "options": ["A) Adição (+)", "B) Multiplicação (*)", "C) Subtração (-)"],
-    "answer": "c"
+    "q": "Para interromper um laço de repetição na mesma hora em que o jogador morre, usamos o comando...",
+    "options": ["1) Continue", "2) Break", "3) Print"],
+    "answer": "2"
   },
   {
-    "q": "Se um item dourado faz a pontuação dobrar de tamanho, qual operador matemático é ativado?",
-    "options": ["A) Adição (+)", "B) Multiplicação (*)", "C) Divisão (/)"],
-    "answer": "b"
+    "q": "Juntar a palavra 'Pontos: ' com o número de pontos do jogador para exibir na tela é chamado de...",
+    "options": ["1) Concatenação (União de textos)", "2) Divisão matemática", "3) Subtração de dados"],
+    "answer": "1"
   },
   {
-    "q": "Para saber se a fase atual é um número par ou ímpar, usamos qual operador matemático?",
-    "options": ["A) Resto da divisão (%)", "B) Subtração (-)", "C) Adição (+)"],
-    "answer": "a"
+    "q": "Se quisermos que os obstáculos surjam em posições totalmente imprevisíveis a cada partida, usamos números...",
+    "options": ["1) Fixos e imutáveis", "2) Aleatórios (Random)", "3) Apenas números negativos"],
+    "answer": "2"
   },
   {
-    "q": "Aumentar a velocidade do chão em 1 a cada fase passada é um exemplo de...",
-    "options": ["A) Divisão", "B) Incremento", "C) Decremento"],
-    "answer": "b"
+    "q": "Quando o personagem toca em uma moeda dourada no PythonRunner, o que acontece com a pontuação?",
+    "options": ["1) Diminui", "2) Aumenta", "3) Zera"],
+    "answer": "2"
   },
   {
-    "q": "Para checar se o jogador bateu o recorde de 100 pontos, qual checagem relacional fazemos?",
-    "options": ["A) pontos == 100", "B) pontos > 100", "C) pontos < 100"],
-    "answer": "b"
+    "q": "A regra que diz 'O jogo acaba se a vida chegar a zero ou menos' usa qual sinal matemático no código?",
+    "options": ["1) <= (Menor ou igual)", "2) >= (Maior ou igual)", "3) != (Diferente)"],
+    "answer": "1"
   },
   {
-    "q": "O jogo aciona o 'Game Over' se a vida chegar a zero. Como escrevemos isso no código?",
-    "options": ["A) vida == 0", "B) vida > 0", "C) vida != 0"],
-    "answer": "a"
+    "q": "Para o personagem dar um pulo duplo, ele precisa estar no ar E ter energia. Qual operador junta essas duas condições?",
+    "options": ["1) AND (E)", "2) OR (Ou)", "3) NOT (Não)"],
+    "answer": "1"
   },
   {
-    "q": "Para o jogador poder pular de novo, ele deve estar tocando no chão. Sua altura (Y) deve estar...",
-    "options": ["A) Igual ao nível do chão", "B) Abaixo de zero", "C) No topo da tela"],
-    "answer": "a"
+    "q": "Se o jogo precisa checar qual botão do menu principal você clicou (Jogar, Opções ou Sair), ele usa...",
+    "options": ["1) Estruturas condicionais (IF/ELIF)", "2) Um loop infinito de física", "3) Uma única constante numérica"],
+    "answer": "1"
   },
   {
-    "q": "Se para passar de cenário o jogador precisa ter 50 pontos ou mais, qual é a condição?",
-    "options": ["A) pontos >= 50", "B) pontos <= 50", "C) pontos == 50"],
-    "answer": "a"
+    "q": "Um bloco de código que criamos uma vez para realizar uma tarefa repetida (como `tocar_som_pulo()`) se chama...",
+    "options": ["1) Variável simples", "2) Função", "3) Tipo de texto"],
+    "answer": "2"
   },
   {
-    "q": "Como o código verifica se o jogador e a moeda estão exatamente na mesma posição na tela?",
-    "options": ["A) pos_A > pos_B", "B) pos_A == pos_B", "C) pos_A != pos_B"],
-    "answer": "b"
+    "q": "As informações que enviamos para dentro de uma função para ajustar seu comportamento são chamadas de...",
+    "options": ["1) Parâmetros (ou Argumentos)", "2) Loops infinitos", "3) Chaves de segurança"],
+    "answer": "1"
   },
   {
-    "q": "Para dar um pulo duplo, o jogador precisa estar no ar E ter energia. Qual operador junta isso?",
-    "options": ["A) OU (OR)", "B) E (AND)", "C) NÃO (NOT)"],
-    "answer": "b"
+    "q": "Quando a imagem do seu personagem bate na imagem de uma cobra na tela, o código identifica que houve uma...",
+    "options": ["1) Colisão", "2) Multiplicação", "3) Formatação de texto"],
+    "answer": "1"
   },
   {
-    "q": "O jogo pausa se o jogador apertar 'P' OU a tecla 'Esc'. Qual operador usamos aqui?",
-    "options": ["A) E (AND)", "B) OU (OR)", "C) NÃO (NOT)"],
-    "answer": "b"
+    "q": "Em listas de programação, qual é a posição (índice) do primeiríssimo item guardado?",
+    "options": ["1) Posição 1", "2) Posição 0", "3) Posição -1"],
+    "answer": "2"
   },
   {
-    "q": "A cobra ataca se o jogador NÃO estiver com escudo de invencibilidade. Qual operador inverte a lógica?",
-    "options": ["A) NÃO (NOT)", "B) OU (OR)", "C) E (AND)"],
-    "answer": "a"
+    "q": "Qual tipo de dado armazena números com casas decimais, como a velocidade atual do chão (ex: 7.5)?",
+    "options": ["1) Float (Decimal)", "2) Int (Inteiro)", "3) String (Texto)"],
+    "answer": "1"
   },
   {
-    "q": "Se 'vivo == Verdadeiro AND tem_escudo == Falso', e um espinho acerta o jogador, o que ocorre?",
-    "options": ["A) Ganha vida", "B) Perde vida", "C) Fica invencível"],
-    "answer": "b"
-  },
-  {
-    "q": "Para a lua aparecer no cenário, precisa ter mais de 100 pontos E ser cenário noturno. As duas condições devem ser...",
-    "options": ["A) Falsas", "B) Verdadeiras", "C) Diferentes"],
-    "answer": "b"
-  },
-  {
-    "q": "Qual estrutura de código decide o que acontece quando o jogador bate numa pedra?",
-    "options": ["A) Condicional (IF)", "B) Laço (FOR)", "C) Variável"],
-    "answer": "a"
-  },
-  {
-    "q": "SE a vida for zero, pare o jogo, SENÃO continue. O 'SENÃO' equivale a qual comando em inglês?",
-    "options": ["A) ELSE", "B) WHILE", "C) FOR"],
-    "answer": "a"
-  },
-  {
-    "q": "Na programação do PythonRunner, um comando IF (Se) pode existir sozinho sem precisar de um ELSE (Senão)?",
-    "options": ["A) Sim", "B) Não", "C) Apenas em Python"],
-    "answer": "a"
-  },
-  {
-    "q": "Para testar qual botão do menu foi clicado (Jogar, Opções, Sair), usamos uma estrutura com:",
-    "options": ["A) Um IF apenas", "B) Vários ELSE IF (elif)", "C) Loops infinitos"],
-    "answer": "b"
-  },
-  {
-    "q": "Se a condição de um IF for falsa (ex: o jogador NÃO apertou espaço), o código de pular dentro dele é...",
-    "options": ["A) Repetido", "B) Ignorado", "C) Apagado do arquivo"],
-    "answer": "b"
-  },
-  {
-    "q": "Para criar 50 partículas de poeira ao cair no chão sem escrever 50 linhas de código, usamos um...",
-    "options": ["A) Comando IF", "B) Laço de repetição (Loop)", "C) Tipo Booleano"],
-    "answer": "b"
-  },
-  {
-    "q": "O bloco de código que mantém a tela do jogo se atualizando sem parar enquanto você joga é um...",
-    "options": ["A) Laço WHILE (Enquanto)", "B) Condicional IF", "C) Função de Som"],
-    "answer": "a"
-  },
-  {
-    "q": "Qual comando usamos dentro de um laço para forçar a saída dele imediatamente, encerrando a repetição?",
-    "options": ["A) Continue", "B) Break", "C) Stop"],
-    "answer": "b"
-  },
-  {
-    "q": "Em um laço 'Para cada obstáculo na tela', o que o computador faz?",
-    "options": ["A) Apaga todos de uma vez", "B) Verifica e move um obstáculo por vez", "C) Pausa o jogo"],
-    "answer": "b"
-  },
-  {
-    "q": "O que acontece se o programador cria um laço 'Enquanto Verdadeiro' que não tem nenhuma forma de sair?",
-    "options": ["A) O jogo fica muito rápido", "B) O jogo trava (Loop infinito)", "C) O jogo zera sozinho"],
-    "answer": "b"
-  },
-  {
-    "q": "Para guardar os nomes dos 10 melhores jogadores no 'Placar', nós usamos uma estrutura de dados chamada...",
-    "options": ["A) Lista (Array)", "B) Variável Inteira", "C) Função de pulo"],
-    "answer": "a"
-  },
-  {
-    "q": "Na maioria das linguagens de programação, o primeiro item de uma lista fica em qual posição (índice)?",
-    "options": ["A) Posição 1", "B) Posição 0", "C) Posição -1"],
-    "answer": "b"
-  },
-  {
-    "q": "Se a lista de nuvens no Spawner estiver vazia (tamanho 0), quantas nuvens aparecem no céu?",
-    "options": ["A) Uma", "B) Zero", "C) Dez"],
-    "answer": "b"
-  },
-  {
-    "q": "Como o Spawner faz para colocar um novo espinho na lista de obstáculos do cenário?",
-    "options": ["A) Deletando a lista", "B) Adicionando o item à lista", "C) Multiplicando a lista"],
-    "answer": "b"
-  },
-  {
-    "q": "Qual função nativa geralmente usamos para descobrir a quantidade total de perguntas dentro do seu JSON?",
-    "options": ["A) Length (Tamanho / len)", "B) Max (Máximo)", "C) Sort (Ordenar)"],
-    "answer": "a"
-  },
-  {
-    "q": "Para não repetir as várias linhas de cálculo de gravidade, nós agrupamos esse código em uma...",
-    "options": ["A) Função", "B) Variável", "C) Lista"],
-    "answer": "a"
-  },
-  {
-    "q": "Quando mandamos tocar o som enviando 'pulo.wav' para a função de áudio, esse nome do arquivo atua como um...",
-    "options": ["A) Erro de código", "B) Parâmetro (Argumento)", "C) Loop"],
-    "answer": "b"
-  },
-  {
-    "q": "Quando uma função calcula algo (como a soma da pontuação final), ela faz o que com esse resultado?",
-    "options": ["A) Retorna (Return)", "B) Apaga", "C) Esconde"],
-    "answer": "a"
-  },
-  {
-    "q": "Uma função chamada 'iniciar_jogo()' normalmente deve ser ativada em qual momento?",
-    "options": ["A) Somente no Game Over", "B) No começo do jogo ou ao reiniciar", "C) A cada pulo do jogador"],
-    "answer": "b"
-  },
-  {
-    "q": "Qual a maior vantagem de separar a lógica do jogo (cenário, jogador, menus) em várias funções?",
-    "options": ["A) Deixa o jogo muito mais pesado", "B) Organiza o código e evita repetição", "C) Muda automaticamente as cores"],
-    "answer": "b"
-  },
-  {
-    "q": "O momento exato em que o jogador aperta a barra de espaço no teclado é capturado pelo jogo como um...",
-    "options": ["A) Evento de Entrada (Input)", "B) Condicional", "C) Operador Lógico"],
-    "answer": "a"
-  },
-  {
-    "q": "Para simular a gravidade puxando o personagem para baixo, o que o código faz matematicamente a cada frame?",
-    "options": ["A) Aumenta o valor da posição Y", "B) Deixa Y em zero", "C) Diminui a pontuação"],
-    "answer": "a"
-  },
-  {
-    "q": "Quando a imagem do seu jogador sobrepõe os pixels da imagem de um obstáculo na tela, chamamos isso de...",
-    "options": ["A) Bug Visual", "B) Colisão", "C) Loop de desenho"],
-    "answer": "b"
-  },
-  {
-    "q": "Para gerar obstáculos em tempos diferentes e criar um desafio imprevisível, o jogo precisa de uma função de...",
-    "options": ["A) Ordenação alfabética", "B) Números Aleatórios (Random)", "C) Constantes de física"],
-    "answer": "b"
-  },
-  {
-    "q": "O 'FPS' (Frames por Segundo) do PythonRunner define quantas vezes por segundo o computador...",
-    "options": ["A) Toca a música inteira", "B) Atualiza a lógica e desenha a tela", "C) Salva o placar na internet"],
-    "answer": "b"
+    "q": "Qual comando faz uma função terminar sua execução e enviar um resultado calculado de volta para o jogo?",
+    "options": ["1) Return", "2) Input", "3) Print"],
+    "answer": "1"
   }
 ]
