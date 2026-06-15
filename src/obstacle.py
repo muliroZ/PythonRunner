@@ -8,8 +8,8 @@ class Obstacle(pygame.sprite.Sprite):
         self.obstacle_type = obstacle_type
 
         if obstacle_type == "small":
-            self.image = pygame.Surface((20, 30))
-            self.image.fill((255, 0, 0))
+            self.image = pygame.image.load("assets/sprites/CactoShort.png").convert_alpha()
+            self.image = pygame.transform.scale(self.image, (int(self.image.get_width() * 1.3), int(self.image.get_height() * 1.3)))
             self.rect = self.image.get_rect(midbottom=(x, 400))
 
         elif obstacle_type == "tall":

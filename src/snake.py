@@ -6,7 +6,7 @@ class Snake(pygame.sprite.Sprite):
         super().__init__()
         self.sprite_sheet_walk = SpriteSheet("assets/sprites/PythonicaWalk.png")
         self.sprite_sheet_jump = SpriteSheet("assets/sprites/PythonicaJump.png")
-        self.sprite_sheet_dash = SpriteSheet("assets/sprites/PythonicaSlide.png")
+        self.sprite_sheet_dash = SpriteSheet("assets/sprites/Rastejamais.png")
         
         self.run_frames = [self.sprite_sheet_walk.get_image(i, 0, 42, 42, scale=2) for i in range(10)]
         self.jump_frames = [self.sprite_sheet_jump.get_image(i, 0, 42, 42, scale=2) for i in range(11)]
